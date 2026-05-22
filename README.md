@@ -76,41 +76,6 @@ Tested offline against the **FVC2002** benchmark dataset and on a physical proto
 | Verification latency | < 1 s (LAN) |
 
 ---
-
-## Repository Structure
-
-```
-.
-├── firmware/          # ESP32 Arduino sketch
-├── server/
-│   ├── api/           # Python Flask REST server
-│   └── matching/      # Java SourceAFIS matching service
-├── evaluation/        # FVC2002 test scripts and results
-└── docs/              # Thesis PDF and figures
-```
-
----
-
-## Getting Started
-
-```bash
-# Clone
-git clone https://github.com/Aleksandar1567/master-thesis.git
-
-# Server (Python)
-cd server/api
-pip install -r requirements.txt
-python app.py
-
-# Matching service (Java)
-cd server/matching
-mvn package
-java -jar target/matching.jar
-
-# Flash firmware
-# Open firmware/ in Arduino IDE, set your WiFi credentials and server IP, upload to ESP32
-```
-
 ---
 
 ## License
